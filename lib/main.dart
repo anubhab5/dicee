@@ -1,19 +1,27 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("dicee"),
+          backgroundColor: Colors.red,
+        ),
+        body: DiceeContainer(),
+      ),
+    )
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class DiceeContainer extends StatelessWidget {
+
+  const DiceeContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text("Dicee"), backgroundColor: Colors.red),
-        body: SafeArea(child: Column()),
-      ),
-    );
+    // TODO: implement build
+    return Container();
   }
+
 }
